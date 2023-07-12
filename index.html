@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Ecommerce - VicioGames</title>
     <link rel="icon" href="./multimedia/img/Logo/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!----------------------------------  Walter Coronel NAVBAR ------------------------------------------->
     <header>
@@ -28,8 +35,127 @@
     </nav>
 
     <!------------------------------------  Elian Amselem MAIN -------------------------------------------->
+
     <main>
+        <aside>
+            <form>
+                <fieldset class="aside__fieldset">
+                    <legend>Filtros</legend>
+                    <div class="aside__filter_1">
+                        <h3 class="subtitle__categories">Categorias</h3>
+                        <input type="checkbox">
+                        <label for="Terror">Terror</label><br>
+                        <input type="checkbox">
+                        <label for="Casual">Casual</label><br>
+                        <input type="checkbox">
+                        <label for="Adventure">Adventure</label><br>
+                        <input type="checkbox">
+                        <label for="MMORPG">MMORPG</label><br>
+                        <input type="checkbox">
+                        <label for="Sports Games">Sports Games</label>
+                    </div>
+                    <div class="aside__filter_2">
+                        <h3 class="aside__subtitle">Plataformas</h3>
+                        <input type="checkbox">
+                        <label for="PC">PC</label><br>
+                        <input type="checkbox">
+                        <label for="PS4">PlayStation 4</label><br>
+                        <input type="checkbox">
+                        <label for="PS5">PlayStation 5</label><br>
+                        <input type="checkbox">
+                        <label for="Xbox Series">Xbox Series</label><br>
+                        <input type="checkbox">
+                        <label for="Nintendo Switch">Nintendo Switch</label><br>
+                    </div>
+                    <div class="aside__filter_3">
+                        <h3 class="aside__subtitle">Precio</h3>
+                        <input placeholder="$ 100" class="aside_price" type="number" min="0">
+                        <span>-</span>
+                        <input placeholder="$ 1500" class="aside_price" type="number" min="0">
+                        <label class="aside_min" for="">Minimo</label>
+                        <label class="aside_max" for="">Maximo</label>
+                        <button class="filter_btn" type="submit">Aplicar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </aside>
+
+        <section class="section__banner">
+            <div class="banner"></div>
+        </section>
         
+        <section class="section__cards">
+            <div class="cards">
+                <img src="./multimedia/img/Age-Of-Empires-II-portada-1.jpeg" alt="">
+                <h2>Age of Empires: Definitive Edition</h2>
+                <span class="cards__platforms">PC</span>
+                <span class="cards__platforms">Mobile</span>
+                <p class="cards__price">$1000</p>
+                <div class="cards__description_container">
+                    <p class="cards__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vel,recusandae natus corrupti.</p>
+                </div>
+                <button class="cards_btn" type="submit">Comprar</button>
+            </div>
+            <div class="cards">
+                <img src="./multimedia/Couter-Strike-GO_Artwork.jpg" alt="">
+                <h2>Counter-Strike: Global Offensive</h2>
+                <span class="cards__platforms">PC</span>
+                <span class="cards__platforms">Xbox Series</span>
+                <p class="cards__price">Free</p>
+                <div class="cards__description_container">
+                    <p class="cards__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vel,recusandae natus corrupti.</p>
+                </div>
+                <button class="cards_btn" type="submit">Comprar</button>
+            </div>
+            <div class="cards">
+                <img src="./multimedia/img/Elden-Ring-1.jpg" alt="">
+                <h2>Elden Ring</h2>
+                <span class="cards__platforms">PC</span>
+                <span class="cards__platforms">PS4</span>
+                <span class="cards__platforms">PS5</span>
+                <p class="cards__price">$12000</p>
+                <div class="cards__description_container">
+                    <p class="cards__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vel,recusandae natus corrupti.</p>
+                </div>
+                <button class="cards_btn" type="submit">Comprar</button>
+            </div>
+            <div class="cards">
+                <img src="./multimedia/img/Horizon.webp" alt="">
+                <h2>Horizon: Zero Dawn</h2>
+                <span class="cards__platforms">PC</span>
+                <span class="cards__platforms">PS4</span>
+                <span class="cards__platforms">PS5</span>
+                <p class="cards__price">$5600</p>
+                <div class="cards__description_container">
+                    <p class="cards__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vel,recusandae natus corrupti.</p>
+                </div>
+                <button class="cards_btn" type="submit">Comprar</button>
+            </div>
+            <div class="cards">
+                <img src="./multimedia/img/Left-4-Dead-2.jpg" alt="">
+                <h2>Left 4 Dead 2</h2>
+                <span class="cards__platforms">PC</span>
+                <span class="cards__platforms">Xbox Series</span>
+                <p class="cards__price">$152</p>
+                <div class="cards__description_container">
+                    <p class="cards__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vel,recusandae natus corrupti.</p>
+                </div>
+                <button class="cards_btn" type="submit">Comprar</button>
+            </div>
+            <div class="cards">
+                <img src="./multimedia/img/Minecraft.jpg" alt="">
+                <h2>Minecraft</h2>
+                <span class="cards__platforms">PC</span>
+                <span class="cards__platforms">PS4</span>
+                <span class="cards__platforms">PS5</span>
+                <span class="cards__platforms">Mobile</span>
+                <p class="cards__price">$8000</p>
+                <div class="cards__description_container">
+                    <p class="cards__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vel,recusandae natus corrupti.</p>
+                </div>
+                <button class="cards_btn" type="submit">Comprar</button>
+            </div>
+        </section>
     </main>
 
     <!-------------------------------------  Franco Ruiz FOOTER ------------------------------------------->
@@ -62,4 +188,5 @@
         </div>
     </footer>
 </body>
+
 </html>
