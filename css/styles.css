@@ -344,12 +344,8 @@ input::-webkit-inner-spin-button {
         grid-row: 2 / 5;
         width: 95%;
         height: 650vh;
-        margin: 15% auto;
+        margin: 5% auto;
         padding-bottom: 20px;
-    }
-
-    .cards{
-        width: 100%;
     }
 
     .cards__description{
