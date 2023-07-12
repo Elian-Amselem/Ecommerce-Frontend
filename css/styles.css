@@ -91,7 +91,7 @@ main{
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    /* grid-template-rows: repeat(1, 1fr); */
 
 }
 
@@ -228,7 +228,7 @@ input::-webkit-inner-spin-button {
     grid-column: 2 / 5;
     grid-row: 2 / 5;
     width: 95%;
-    height: 100%;
+    height: 300vh;
 }
 
 .cards{
@@ -275,7 +275,7 @@ input::-webkit-inner-spin-button {
 }
 
 .cards__description{
-    font-size: 14px;
+    font-size: 16px;
     padding: 7px;
 }
 
@@ -317,13 +317,13 @@ input::-webkit-inner-spin-button {
     main{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
         gap: 25px;
     }
 
     aside{
         grid-column: 1 / 2;
-        grid-row: 2 / 3;
+        grid-row: 2 / 5;
     }
     
     .aside__fieldset{
@@ -333,7 +333,7 @@ input::-webkit-inner-spin-button {
 
     .section__banner{
         grid-column: 1 /  5;
-        grid-row: 1 / 2;
+        grid-row: 1 / 1;
         margin: 5% auto;
     }
     
@@ -343,9 +343,13 @@ input::-webkit-inner-spin-button {
         grid-column: 2 / 5;
         grid-row: 2 / 5;
         width: 95%;
-        height: 600vh;
-        margin: 5% auto;
+        height: 650vh;
+        margin: 15% auto;
         padding-bottom: 20px;
+    }
+
+    .cards{
+        width: 100%;
     }
 
     .cards__description{
@@ -410,6 +414,7 @@ input::-webkit-inner-spin-button {
         .section__cards{
             grid-column: 1 / 5;
             grid-row: 3 / 5;
+            height: 98%;
         }
 }
 
