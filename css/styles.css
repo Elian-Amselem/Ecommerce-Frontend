@@ -320,7 +320,7 @@ input::-webkit-inner-spin-button {
 
 /* ---------------------- FRANCO RUIZ ---------------------- */
 footer{
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     border-top: 2px solid #e58e27;
     border-bottom: 2px solid #e58e27;
     background-color: black;
