@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../multimedia/img_login/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+form{
+    width: 300px;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 10px 4px 10px 10px #ccc;
+    border-radius: 20px;
+    background-color: #ccc;
+}
+
+form img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+form input[type="text"], input[type="password"]{
+    outline: 0;
+    border: 1px solid #ccc;
+    width: 80%;
+    padding: 10px;
+}
+
+form label{
+    font-weight: 500;
+    padding: 10px;
+}
+
+.box-visible{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form button{
+    outline: 0;
+    border: 0;
+    background-color: royalblue;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 250px;
+    padding: 5px;
+    transition: all .3s ease-in-out;
+    color: #fff;
+    font-weight: 500;
+}
+
+form button:hover{
+    opacity: .75;
+}
+@media (max-width: 801px){
+    form{
+        width: 500px;
+        height: 600px;
+    }
+    form img{
+        width: 180px;
+        height: 180px;
+    }
+    form button{
+        width: 350px;
+    }
+
+}
+@media (max-width: 501px){
+    form{
+        width: 450px;
+        height: 600px;
+        margin-right: 50px;
+    }
+    form img{
+        width: 200px;
+        height: 200px;
+    }
+    form button{
+        width: 300px;
+    }
+
+}

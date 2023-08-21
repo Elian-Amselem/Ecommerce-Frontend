@@ -1,227 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce - VicioGames</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" href="./multimedia/img/Logo/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/js/app.js"></script>
+    <title>login</title>
 </head>
-
 <body>
-    <!----------------------------------  Walter Coronel NAVBAR ------------------------------------------->
-    <header>
-        <img class="logo" src="./multimedia/img/Logo/logo.png">
-        <h1 class="titulo">VicioGames</h1>
-        <div class="iconos">
-            <a href="#"><i class="fa-solid fa-user"></i></a>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    <form>
+        <img src="multimedia/img_login/user.png" alt="user-img">
+        <label for="username">Usuario</label>
+        <input type="text" id="username" placeholder="usuario" required>
+        <label for="password">Contraseña</label>
+        <input type="text" id="password" placeholder="contrasena" required>
+        <div class="box-visible">
+            <input type="checkbox" id="visible">
+            <label for="check">Mostrar contraseña</label>
         </div>
-    </header>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Categorias</a>
-        <a href="#">Consolas</a>
-        <a href="#">Ofertas</a>
-        <a href="#">Noticias</a>
-        <a href="#">Contacto</a>
-    </nav>
-
-    <!------------------------------------  Elian Amselem MAIN -------------------------------------------->
-
-    <main>
-        <aside>
-            <form>
-                <fieldset class="aside__fieldset">
-                    <legend>Filtros</legend>
-                    <div class="aside__filter_1">
-                        <h3 class="subtitle__categories">Categorias</h3>
-                        <input type="checkbox">
-                        <label for="Terror">Terror</label><br>
-                        <input type="checkbox">
-                        <label for="Casual">Casual</label><br>
-                        <input type="checkbox">
-                        <label for="Adventure">Adventure</label><br>
-                        <input type="checkbox">
-                        <label for="MMORPG">MMORPG</label><br>
-                        <input type="checkbox">
-                        <label for="Sports Games">Sports Games</label>
-                        
-                    </div>
-                    <div class="aside__filter_2">
-                        <h3 class="aside__subtitle">Plataformas</h3>
-                        <input type="checkbox">
-                        <label for="PC">PC</label><br>
-                        <input type="checkbox">
-                        <label for="PS4">PlayStation 4</label><br>
-                        <input type="checkbox">
-                        <label for="PS5">PlayStation 5</label><br>
-                        <input type="checkbox">
-                        <label for="Xbox Series">Xbox Series</label><br>
-                        <input type="checkbox">
-                        <label for="Nintendo Switch">Nintendo Switch</label>
-                    </div>
-                    <div class="aside__filter_3">
-                        <h3 class="aside__subtitle">Precio</h3>
-                        <input placeholder="$ 100" class="aside_price" type="number" min="0">
-                        <span>-</span>
-                        <input placeholder="$ 1500" class="aside_price" type="number" min="0">
-                        <label class="aside_min" for="">Minimo</label>
-                        <label class="aside_max" for="">Maximo</label>
-                        <button class="filter_btn" type="submit">Aplicar</button>
-                    </div>
-                </fieldset>
-            </form>
-        </aside>
-        
-        <section class="section__banner">
-            <div class="banner"></div>
-        </section>
-
-        <section class="section__cards">
-            <div class="cards">
-                <img src="./multimedia/img/Age-Of-Empires-II-portada-1.jpeg" alt="">
-                <h2>Age of Empires: Definitive Edition</h2>
-                <div class="cards__container_platforms">
-                    <span class="cards__platforms">PC</span>
-                    <span class="cards__platforms">Mobile</span>
-                </div>
-                <div class="cards__description_container">
-                    <p class="cards__description">"Age of Empires 2: Definitive Edition" es un juego de estrategia en tiempo real con gráficos mejorados, nuevas civilizaciones y una campaña renovada.</p>
-                </div>
-                <div class="cards__container_price">
-                    <p class="cards__price">$1000</p>
-                    <button class="cards_btn" type="submit">Comprar</button>
-                </div>
-            </div>
-            <div class="cards">
-                <img src="./multimedia/img/Couter-Strike-GO_Artwork.jpg" alt="">
-                <h2>Counter-Strike: Global Offensive</h2>
-                <div class="cards__container_platforms">
-                    <span class="cards__platforms">PC</span>
-                    <span class="cards__platforms">Xbox Series</span>
-                </div>
-                <div class="cards__description_container">
-                    <p class="cards__description">"Counter-Strike: Global Offensive" es un famoso juego de disparos táctico en primera persona, donde dos equipos se enfrentan en emocionantes partidas multijugador.</p>
-                </div>
-                <div class="cards__container_price">
-                    <p class="cards__price">Free</p>
-                    <button class="cards_btn" type="submit">Comprar</button>
-                </div>
-            </div>
-            <div class="cards">
-                <img src="./multimedia/img/Elden-Ring-1.jpg" alt="">
-                <h2>Elden Ring</h2>
-                <div class="cards__container_platforms">
-                    <span class="cards__platforms">PC</span>
-                    <span class="cards__platforms">PS4</span>
-                    <span class="cards__platforms">PS5</span>
-                </div>
-                <div class="cards__description_container">
-                    <p class="cards__description">"Elden Ring" es un anticipado videojuego de acción y rol de mundo abierto, que promete una experiencia inmersiva con un vasto mundo, batallas épicas y una narrativa cautivadora.
-                    </p>
-                    <div class="cards__container_price">
-                        <p class="cards__price">$12000</p>
-                        <button class="cards_btn" type="submit">Comprar</button>
-                    </div>
-
-                    </div>
-            </div>
-            <div class="cards">
-                <img src="./multimedia/img/Horizon.webp" alt="">
-                <h2>Horizon: Zero Dawn</h2>
-                <div class="cards__container_platforms">
-                    <span class="cards__platforms">PC</span>
-                    <span class="cards__platforms">PS4</span>
-                    <span class="cards__platforms">PS5</span>
-                </div>
-                <div class="cards__description_container">
-                    <p class="cards__description">"Horizon: Zero Dawn" es un juego de acción y aventura, donde los jugadores controlan a Aloy, una cazadora habilidosa, en una misión para desentrañar los misterios de su mundo y enfrentar a máquinas salvajes.</p>
-                </div>
-                <div class="cards__container_price">
-                    <p class="cards__price">$5600</p>
-                    <button class="cards_btn" type="submit">Comprar</button>
-                </div>
-            </div>
-            <div class="cards">
-                <img src="./multimedia/img/Left-4-Dead-2.jpg" alt="">
-                <h2>Left 4 Dead 2</h2>
-                <div class="cards__container_platforms">
-                    <span class="cards__platforms">PC</span>
-                    <span class="cards__platforms">Xbox Series</span>
-                </div>
-                <div class="cards__description_container">
-                    <p class="cards__description">"Left 4 Dead 2" es un apasionante juego de supervivencia cooperativa en el que un equipo de sobrevivientes debe enfrentarse a hordas de zombies despiadados en diversos entornos hostiles.</p>
-                </div>
-                <div class="cards__container_price">
-                    <p class="cards__price">$152</p>
-                    <button class="cards_btn" type="submit">Comprar</button>
-                </div>
-            </div>
-            <div class="cards">
-                <img src="./multimedia/img/Minecraft.jpg" alt="">
-                <h2>Minecraft</h2>
-                <div class="cards__container_platforms">
-                    <span class="cards__platforms">PC</span>
-                    <span class="cards__platforms">PS4</span>
-                    <span class="cards__platforms">PS5</span>
-                    <span class="cards__platforms">Mobile</span>
-
-                </div>
-                <div class="cards__description_container">
-                <p class="cards__description">"Minecraft" es un popular juego de mundo abierto, donde los jugadores pueden crear, explorar y sobrevivir en un entorno pixelado, lleno de recursos y peligros.</p>
-                </div>
-                <div class="cards__container_price">
-                    <p class="cards__price">$8000</p>
-                    <button class="cards_btn" type="submit">Comprar</button>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-------------------------------------  Franco Ruiz FOOTER ------------------------------------------->
-    <footer>
-        <p>Derechos Reservados ©️2023 </p>
-        <br>
-        <div class="container">
-            <div class="card">
-                <img src="multimedia/img/walter.jpg">
-                <h4>Walter Coronel</h4>
-                <p> Programador Web Full Stack JR</p>
-                <div class="redes">
-                <a href="https://www.instagram.com/walter._.coronel/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/walter--coronel/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/WalterCoronel2000" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="multimedia/img/elian.jpg">
-                <h4>Elian Amselem</h4>
-                <p> Programador Web Full Stack JR</p>
-                <div class="redes">
-                    <a href=""><i class="fa-brands fa-instagram" target="_blank"></i></a>
-                    <a href="https://www.linkedin.com/in/elian-amselem/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Elian-Amselem" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="multimedia/img/franco.jpg">
-                <h4>Franco Ruiz</h4>
-                <p> Programador Web Full Stack JR</p>
-                <div class="redes">
-                <a href=""><i class="fa-brands fa-instagram" target="_blank"></i></a>
-                <a href="https://www.linkedin.com/in/franco-ruiz10/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/FrancoRuiz10" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+        <button type="submit" id="submit">Iniciar Sesion</button>
+    </form>
+    <script src="js/app.js"></script>
 </body>
-
 </html>
